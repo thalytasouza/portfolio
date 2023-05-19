@@ -267,7 +267,7 @@ export const MainContent = styled.div`
 export const AboutSection = styled.div`
   width: 100%;
   height: 380px;
-  background-color: #0E0E0E;
+  background-color: #ffffff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -275,7 +275,7 @@ export const AboutSection = styled.div`
   h2, p {
     width: 800px;
     margin: 0 auto;
-    color: #f9f9f9;
+    color: #000000;
     text-align: start;
     font-weight: 300;
     opacity: 0.9;
@@ -424,7 +424,7 @@ export const Project = styled.div`
 export const ContactSection = styled.div`
   width: 100%;
   height: 260px;
-  background-color: #141414;
+  background-color: #f20f40;
   text-align: center;
   h2, a, p {
     color: #f9f9f9;
