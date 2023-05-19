@@ -13,14 +13,14 @@ import { ChangeY } from "~/actions/indexActions"
 import EventDispatcher from '~/utils/analytics/analyticsUtils'
 
 export async function getStaticProps({ locale }) {
-  let description = locale == "en-US" ? "Software Developer" : "Desenvolvedor de Software"
+  let description = locale == "en-US" ? "iOS Developer" : "Desenvolvedora iOS"
   let about = locale == "en-US" ? "About me" : "Sobre Mim"
   let projects = locale == "en-US" ? "Projects" : "Projetos"
   let contact = locale == "en-US" ? "Contact" : "Contato"
   let resume = locale == "en-US" ? "Resume" : "Currículo"
   let check = locale == "en-US" ? "Check my Projects" : "Veja meus Projetos"
-  let about_title = locale == "en-US" ? "Hey, I'm Eduardo" : "Olá, eu sou Eduardo"
-  let about_desc_one = locale == "en-US" ? "I'm an Android Developer passionate about finding new ways to improve my projects in order always deliver a beautiful product." : "Eu sou um desenvolvedor de aplicativos para Android apaixonado por encontrar novas maneiras de melhorar meus projetos, com o foco em sempre entregar um produto de qualidade."
+  let about_title = locale == "en-US" ? "Hey, I'm Thalyta" : "Olá, eu sou a Thalyta"
+  let about_desc_one = locale == "en-US" ? "I'm an iOS Developer passionate about finding new ways to improve my projects in order always deliver a beautiful product." : "Eu sou uma desenvolvedora de aplicativos para iOS apaixonada por encontrar novas maneiras de melhorar meus projetos, com o foco em sempre entregar um produto de qualidade."
   let about_desc_two = locale == "en-US" ? "I first started coding in 2017 and besides my initial experience with web development, what indeed captivated me was mobile development with Java and Kotlin, and since then one of my biggest priorities has been building applications with clean, readable, and maintainable code." : "Eu comecei a programar em 2017, para ser mais específico eu estudava desenvolvimento para web, mas o que me cativou de fato foi o desenvolvimento mobile com Java e Kotlin, e desde então uma das minhas maiores prioridades tem sido construir aplicativos com código limpo, legível e eficiente."
   let latest = locale == "en-US" ? "Latest Projects" : "Últimos Projetos"
   let finn_desc = locale == "en-US" ? "Collection of Forums (Social Media)" : "Mídia Social baseada em Fóruns"
@@ -92,7 +92,7 @@ function Home(props) {
       animate={{opacity: 1}}
     >
       <Head>
-        <title>Eduardo Santos</title>
+        <title>Thalyta Souza</title>
         <link rel="icon" href="/icon.ico" />
       </Head>
       <main>
@@ -120,7 +120,7 @@ function Home(props) {
           <MainContent>
             <div className="contentLeft">
               <div className="container">
-                <h1>Eduardo Santos</h1>
+                <h1>Thalyta Souza</h1>
                 <h2>{props.description}</h2>
                 <a href="#projects" onClick={ () => EventDispatcher.logSelectContent('cta_btn', 'check_my_projects') }>{props.check}</a>
               </div>
@@ -190,11 +190,11 @@ function Home(props) {
         <ContactSection id="contact">
           <h2>{props.checkMe}!</h2>
           <div className="bundle">
-            <a href="https://github.com/edufelip" target="_blank" onClick={ () => EventDispatcher.logSelectContent('bottom_nav_btn', 'github') }>Github</a>
-            <a href="https://www.linkedin.com/in/eduardo-felipe-5593221a5/" target="_blank" onClick={ () => EventDispatcher.logSelectContent('bottom_nav_btn', 'linkedin') }>Linkedin</a>
-            <a href="https://medium.com/@eduardofelipi" target="_blank" onClick={ () => EventDispatcher.logSelectContent('bottom_nav_btn', 'blog') }>Blog</a>
+            <a href="https://github.com/thalytasouza" target="_blank" onClick={ () => EventDispatcher.logSelectContent('bottom_nav_btn', 'github') }>Github</a>
+            <a href="https://www.linkedin.com/in/mayerflot/" target="_blank" onClick={ () => EventDispatcher.logSelectContent('bottom_nav_btn', 'linkedin') }>Linkedin</a>
+            <a href="https://medium.com/@mayerflot" target="_blank" onClick={ () => EventDispatcher.logSelectContent('bottom_nav_btn', 'blog') }>Blog</a>
           </div>
-          <p>©2022 Eduardo Santos - eduardofelipi@gmail.com</p>
+          <p>©2023 Thalyta Souza - mayerflot@gmail.com</p>
         </ContactSection>
       </main>
     </motion.div>
